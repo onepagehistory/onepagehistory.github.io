@@ -3904,7 +3904,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Scales_Scales__WEBPACK_IMPORTED_MODULE_9__["Scales"], {
         from: -33100,
-        to: 2050,
+        to: 2020,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
@@ -4062,7 +4062,7 @@ var Scales = function Scales(_ref) {
     },
     __self: this
   }, centuries.map(function (entry) {
-    var centName = Object(_shared_toRoman__WEBPACK_IMPORTED_MODULE_2__["toRoman"])(entry.century);
+    var centName = Object(_shared_toRoman__WEBPACK_IMPORTED_MODULE_2__["centuryToRoman"])(entry.century);
     var centId = centName;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: 'Century' + entry.century,
@@ -4340,26 +4340,37 @@ var data = {
 /*!*******************************!*\
   !*** ./src/shared/toRoman.ts ***!
   \*******************************/
-/*! exports provided: toRoman */
+/*! exports provided: numberToRoman, centuryToRoman */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toRoman", function() { return toRoman; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "numberToRoman", function() { return numberToRoman; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "centuryToRoman", function() { return centuryToRoman; });
 // taken form https://www.selftaughtjs.com/algorithm-sundays-converting-roman-numerals/
-var toRoman = function toRoman(num) {
+var numberToRoman = function numberToRoman(value) {
   var result = '';
   var decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
   var roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
 
   for (var i = 0; i <= decimal.length; i++) {
-    while (num % decimal[i] < num) {
+    while (value % decimal[i] < value) {
       result += roman[i];
-      num -= decimal[i];
+      value -= decimal[i];
     }
   }
 
   return result;
+};
+var centuryToRoman = function centuryToRoman(value) {
+  var sign = Math.sign(value);
+  var num = Math.abs(value);
+
+  if (sign <= 0) {
+    return "".concat(numberToRoman(num + 1), " BCE");
+  }
+
+  return numberToRoman(num);
 };
 
 /***/ }),
