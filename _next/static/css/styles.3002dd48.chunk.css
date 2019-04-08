@@ -5,9 +5,12 @@
   border-radius: 0.25rem;
   overflow: hidden;
   text-align: left;
-  max-height: 128px;
-  transition-duration: 0.5s; }
+  max-height: 132px;
+  transition-duration: 0.5s;
+  box-sizing: border-box;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
   .Card:hover {
+    text-shadow: none;
     z-index: 999;
     max-height: 100rem;
     background: white;
@@ -35,9 +38,10 @@
     padding: 0.5rem 0;
     font-size: 0.8rem; }
   .Card__ImgWrapper {
-    max-width: 128px;
-    max-height: 128px; }
+    max-width: 132px;
+    max-height: 132px; }
     .Card__ImgWrapper img {
+      border: 2px solid #fff;
       border-radius: 0.25rem;
       max-width: 128px;
       max-height: 128px; }

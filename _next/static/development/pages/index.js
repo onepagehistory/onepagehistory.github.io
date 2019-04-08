@@ -3904,7 +3904,7 @@ function (_Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Scales_Scales__WEBPACK_IMPORTED_MODULE_9__["Scales"], {
         from: -33100,
-        to: 2019,
+        to: 2050,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 36
