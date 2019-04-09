@@ -3856,31 +3856,70 @@ function (_Component) {
           lineNumber: 21
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("header", {
+      }),
+      /** GOOGLE ANALYTICS {{{
+        * NOTE: [kos] adding google analitics only for production
+        *     would be nice to:
+        *     - do not download ga script for dev at all
+        *     - remove % NODE_ENV % reference from here
+        */
+      // !siteData.dev &&
+      react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("script", {
+        async: true,
+        src: "https://www.google-analytics.com/analytics.js",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("script", {
+        async: true,
+        src: "/autotrack.js",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("script", {
+        src: "/GA.js",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }))
+      /* GOOGLE ANALYTICS }}} */
+      ), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("header", {
         className: "App__Header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Search_Search__WEBPACK_IMPORTED_MODULE_7__["Search"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 40
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("section", {
         className: "App__Body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 42
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "App__Events",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 43
         },
         __self: this
       }, _data__WEBPACK_IMPORTED_MODULE_8__["data"].entries.filter(function (entry) {
@@ -3891,7 +3930,7 @@ function (_Component) {
           entry: entry,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 45
           },
           __self: this
         });
@@ -3899,7 +3938,7 @@ function (_Component) {
         className: "App__Scales",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Scales_Scales__WEBPACK_IMPORTED_MODULE_9__["Scales"], {
@@ -3907,7 +3946,7 @@ function (_Component) {
         to: 2020,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 52
         },
         __self: this
       }))));
