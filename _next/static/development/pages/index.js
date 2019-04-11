@@ -4009,13 +4009,23 @@ var Card = function Card(_ref) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "Card__TitleLink",
     href: '#' + entry.name,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, entry.title)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, entry.title), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "Card__WikiLink",
+    target: "_blank",
+    href: 'https://wikipedia.org/wiki/' + entry.name,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "[W]")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "Card__Date",
     __source: {
       fileName: _jsxFileName,
@@ -4177,7 +4187,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
-        placeholder: "Search is not working yet",
+        placeholder: "Sorry, search is not working yet",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 8
@@ -4266,7 +4276,7 @@ var data = {
     title: 'Omar Khayyam',
     date: '18 May 1048 – 4 December 1131',
     shortDescription: 'Persian mathematician, astronomer, and poet',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Omar_Khayyam2.JPG',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Omar_Khayyam2.JPG/440px-Omar_Khayyam2.JPG',
     position: {
       right: '25%',
       top: getTopPos(1048)
@@ -4310,7 +4320,7 @@ var data = {
     title: 'Steam engine',
     date: '1712',
     shortDescription: '',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/JamesWattEngine.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/JamesWattEngine.jpg/640px-JamesWattEngine.jpg',
     position: {
       left: '35%',
       top: getTopPos(1712)
@@ -4321,7 +4331,7 @@ var data = {
     title: 'Steam locomotive',
     date: '1802',
     shortDescription: '',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Vintage_image_of_steam_train.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/California_Western_Railroad_Locomotive_45.jpg/440px-California_Western_Railroad_Locomotive_45.jpg',
     position: {
       left: '30%',
       top: getTopPos(1802)
@@ -4343,7 +4353,7 @@ var data = {
     title: 'Albert Einstein',
     date: '14 March 1879 – 18 April 1955',
     shortDescription: 'German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). His work is also known for its influence on the philosophy of science. He is best known to the general public for his mass–energy equivalence formula E = mc2',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/440px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg',
     position: {
       left: '11%',
       top: getTopPos(1879)
@@ -4376,7 +4386,7 @@ var data = {
     title: 'Gilgamesh',
     date: 'probably between 2800 and 2500 BCE',
     shortDescription: 'Was a historical king of the Sumerian city-state of Uruk, a major hero in ancient Mesopotamian mythology, and the protagonist of the Epic of Gilgamesh, an epic poem written in Akkadian during the late second millennium BCE',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg/440px-Hero_lion_Dur-Sharrukin_Louvre_AO19862.jpg',
     position: {
       left: '50%',
       top: getTopPos(-2800)
@@ -4387,21 +4397,10 @@ var data = {
     title: 'Lion-man',
     date: '~ 33,000 – 38,000',
     shortDescription: 'The lion-headed figurine is the oldest-known zoomorphic (animal-shaped) sculpture in the world, and the oldest-known uncontested example of figurative art. It has been determined by carbon dating of the layer in which it was found to be between 35,000 and 40,000 years old, and therefore is associated with the archaeological Aurignacian culture of the Upper Paleolithic. It was carved out of mammoth ivory using a flint stone knife. Seven parallel, transverse, carved gouges are on the left arm.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Loewenmensch1.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Loewenmensch1.jpg/480px-Loewenmensch1.jpg',
     position: {
       left: '33%',
       top: getTopPos(-33000)
-    }
-  }, {
-    name: '',
-    type: HistoryEntryType.Event,
-    title: '',
-    date: '',
-    shortDescription: '',
-    imageUrl: '',
-    position: {
-      left: 0,
-      top: getTopPos(0)
     }
   }, {
     name: 'Incandescent_light_bulb',
@@ -4409,7 +4408,7 @@ var data = {
     title: 'Light bulb',
     date: 'Around 1880s',
     shortDescription: '',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a1/Livermore_Centennial_Light_Bulb.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Livermore_Centennial_Light_Bulb.jpg/266px-Livermore_Centennial_Light_Bulb.jpg',
     position: {
       left: '40%',
       top: getTopPos(1880)
@@ -4431,7 +4430,7 @@ var data = {
     title: 'Alexander the Great',
     date: '20/21 July 356 BCE – 10/11 June 323 BCE',
     shortDescription: "A king of the ancient Greek kingdom of Macedon and a member of the Argead dynasty. He was born in Pella in 356 BCE and succeeded his father Philip II to the throne at the age of 20. He spent most of his ruling years on an unprecedented military campaign through Asia and northeast Africa, and by the age of thirty he had created one of the largest empires of the ancient world, stretching from Greece to northwestern India. He was undefeated in battle and is widely considered one of history's most successful military commanders.",
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/AlexandreLouvre.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/AlexandreLouvre.jpg/340px-AlexandreLouvre.jpg',
     position: {
       left: '40%',
       top: getTopPos(-356)
@@ -4442,7 +4441,7 @@ var data = {
     title: 'Scientific Revolution',
     date: '~ 1543',
     shortDescription: 'The Scientific Revolution was a series of events that marked the emergence of modern science during the early modern period, when developments in mathematics, physics, astronomy, biology (including human anatomy) and chemistry transformed the views of society about nature',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/CMB_Timeline300_no_WMAP.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/CMB_Timeline300_no_WMAP.jpg/520px-CMB_Timeline300_no_WMAP.jpg',
     position: {
       left: '5%',
       top: getTopPos(1543)
@@ -4453,7 +4452,7 @@ var data = {
     title: 'Renaissance',
     date: '~ 14th – 17th centuries',
     shortDescription: 'a period in European history, covering the span between the 14th and 17th centuries and marking the transition from the Middle Ages to modernity. The traditional view focuses more on the early modern aspects of the Renaissance and argues that it was a break from the past, but many historians today focus more on its medieval aspects and argue that it was an extension of the middle ages',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/500px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg',
     position: {
       left: '33%',
       top: getTopPos(1350)
@@ -4464,7 +4463,7 @@ var data = {
     title: 'Metropolitan Railway',
     date: '1863',
     shortDescription: "The Metropolitan Railway was a passenger and goods railway that served London from 1863 to 1933. It opened to the public on 10 January 1863 with gas-lit wooden carriages hauled by steam locomotives, the world's first passenger-carrying designated underground railway.",
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/20/Metropolitan_Underground_Railway_stations.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Metropolitan_Underground_Railway_stations.jpg/440px-Metropolitan_Underground_Railway_stations.jpg',
     position: {
       left: '26%',
       top: getTopPos(1863)
@@ -4487,7 +4486,7 @@ var data = {
     title: 'Leonardo da Vinci',
     date: '15 April 1452 – 2 May 1519',
     shortDescription: 'Italian polymath of the Renaissance whose areas of interest included invention, drawing, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography',
-    imageUrl: 'https://www.wga.hu/art/m/melzi/port_leo.jpg',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg/440px-Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg',
     position: {
       left: '40%',
       top: getTopPos(1452)

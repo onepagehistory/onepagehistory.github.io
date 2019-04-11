@@ -25,17 +25,25 @@
     .Card:hover .Card__Date {
       display: block;
       color: #666; }
+    .Card:hover .Card__WikiLink {
+      display: inline; }
   .Card__Body {
     padding: 0 0.5rem; }
   .Card__Title {
     color: #eee;
     margin: 0.25rem 0 0; }
-    .Card__Title a, .Card__Title a:visited {
-      color: inherit;
-      text-decoration: none; }
     @media (max-width: 779px) {
       .Card__Title {
         display: none; } }
+  .Card__TitleLink, .Card__TitleLink:visited {
+    color: inherit;
+    text-decoration: none; }
+  .Card__WikiLink {
+    display: none;
+    color: #4d79ff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    vertical-align: super; }
   .Card__Date {
     font-size: 0.6rem;
     color: #eee; }
