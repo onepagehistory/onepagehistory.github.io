@@ -3984,11 +3984,7 @@ var Card = function Card(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     id: entry.name,
     className: "Card",
-    style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      position: 'absolute'
-    }, entry.position, {
-      marginTop: '-128px'
-    }),
+    style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, entry.position),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -3998,14 +3994,14 @@ var Card = function Card(_ref) {
     className: "Card__Body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
     className: "Card__Title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -4013,7 +4009,7 @@ var Card = function Card(_ref) {
     href: '#' + entry.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     },
     __self: this
   }, entry.title), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -4022,35 +4018,36 @@ var Card = function Card(_ref) {
     href: 'https://wikipedia.org/wiki/' + entry.name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     },
     __self: this
   }, "[W]")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "Card__Date",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 14
     },
     __self: this
   }, entry.date), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "Card__ShortDescription",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     },
     __self: this
   }, entry.shortDescription)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "Card__ImgWrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    alt: entry.name + ' representation',
     src: entry.imageUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 19
     },
     __self: this
   })));
@@ -4469,6 +4466,17 @@ var data = {
       top: getTopPos(1863)
     }
   }, {
+    name: 'View_from_the_Window_at_Le_Gras',
+    type: HistoryEntryType.Event,
+    title: 'First photo',
+    date: '~ 1826',
+    shortDescription: 'Nicéphore Niépce — French inventor, usually credited as the inventor of photography and a pioneer in that field',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/LEI0440_Leica_IIIf_chrom_-_Sn._580566_1951-52-M39_Blitzsynchron_front_view-6531_hf-.jpg/440px-LEI0440_Leica_IIIf_chrom_-_Sn._580566_1951-52-M39_Blitzsynchron_front_view-6531_hf-.jpg',
+    position: {
+      left: '33%',
+      top: getTopPos(1826)
+    }
+  }, {
     name: '',
     type: HistoryEntryType.Event,
     title: '',
@@ -4480,6 +4488,17 @@ var data = {
       top: getTopPos(0)
     } // on top of em all
 
+  }, {
+    name: 'Charles_Darwin',
+    type: HistoryEntryType.Event,
+    title: 'Charles Darwin',
+    date: '12 February 1809 – 19 April 1882',
+    shortDescription: 'English naturalist, geologist and biologist, best known for his contributions to the science of evolution. His proposition that all species of life have descended over time from common ancestors is now widely accepted, and considered a foundational concept in science. In a joint publication with Alfred Russel Wallace, he introduced his scientific theory that this branching pattern of evolution resulted from a process that he called natural selection, in which the struggle for existence has a similar effect to the artificial selection involved in selective breeding.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Robert_Darwin_by_John_Collier.jpg/440px-Charles_Robert_Darwin_by_John_Collier.jpg',
+    position: {
+      left: '23%',
+      top: getTopPos(1809)
+    }
   }, {
     name: 'Leonardo_da_Vinci',
     type: HistoryEntryType.Event,
