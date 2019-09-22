@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{55:function(n,t,e){"use strict";e.r(t);var u=e(0),o=e.n(u);t.default=function(){return o.a.createElement("h1",null,"It's not about us")}}}]);
