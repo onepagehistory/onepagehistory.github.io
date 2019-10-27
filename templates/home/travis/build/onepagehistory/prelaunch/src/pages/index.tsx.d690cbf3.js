@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{50:function(e,n,t){"use strict";t.r(n);var a=t(0);t(127),n.default=function(){return a.createElement("div",{className:"landing-page"},a.createElement("h1",null,"World History Page"),a.createElement("h2",null,"Educational Project"))}}}]);
